@@ -1,0 +1,25 @@
+/* .modal
+{
+    overflow: hidden;
+}
+.modal-dialog{
+    margin-right: 0;
+    margin-left: 0;
+} */
+.modeless{
+    top:30%;
+    left:20%;
+    width: 30%;
+
+}
+
+
+
+
+
+  .modal-dialog {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+
+  }

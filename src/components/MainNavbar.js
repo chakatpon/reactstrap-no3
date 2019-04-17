@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { Navbar,
          Container,
@@ -13,15 +14,17 @@ import { Navbar,
          DropdownItem, 
          } from 'reactstrap';
 
+import { toggleNavbar } from '../actions';
+
 class MainNavbar extends React.Component {
     render() {
         return(
             <div>
                 <Navbar  color="dark" dark expand="md">
                     <Container>
-                        <NavbarBrand href="/app/dashboard" >Chakatpon Khunthong</NavbarBrand>
-                        <NavbarToggler />
-                        <Collapse navbar>
+                        <NavbarBrand fixed="top" href="/app/dashboard" >Chakatpon Khunthong</NavbarBrand>
+                        <NavbarToggler onClick={() => this.props.toggleNavbar(this.props.navOpen)}/>
+                        <Collapse isOpen={this.props.navOpen} navbar>
                             <Nav  navbar>
                                 <NavItem>
                                     <NavLink className="nav-link" activeClassName="active" to="/app/dashboard">Dashboard</NavLink>
@@ -65,4 +68,10 @@ class MainNavbar extends React.Component {
     }
 }
 
-export default MainNavbar;
+const mapStateToProps = (state) => {
+    return{
+        navOpen : state.navOpen
+    }
+}
+
+export default connect(mapStateToProps,{ toggleNavbar })(MainNavbar);
