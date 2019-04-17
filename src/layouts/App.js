@@ -12,7 +12,14 @@ import Profile from '../views/Profile';
 import Settings from '../views/Settings';
 import Users from '../views/Users';
 
+import $ from 'jquery/dist/jquery';
+
 class App extends React.Component {
+
+    componentDidMount() {
+
+    }
+
     render() {
         return(
             <div>
