@@ -4,15 +4,15 @@ class PostTable extends React.Component {
     render() {
         return(
             <section id="posts">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-9">
-                  <div class="card">
-                    <div class="card-header">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-9">
+                  <div className="card">
+                    <div className="card-header">
                       <h4>Latest Posts</h4>
                     </div>
-                    <table class="table table-striped">
-                      <thead class="thead-dark">
+                    <table className="table table-striped">
+                      <thead className="thead-dark">
                         <tr>
                           <th>#</th>
                           <th>Title</th>
@@ -28,8 +28,8 @@ class PostTable extends React.Component {
                           <td>Web Development</td>
                           <td>May 10 2019</td>
                           <td>
-                            <a href="details.html" class="btn btn-secondary">
-                              <i class="fas fa-angle-double-right"></i> Details
+                            <a href="/app/details" className="btn btn-secondary">
+                              <i className="fas fa-angle-double-right"></i> Details
                             </a>
                           </td>
                         </tr>
@@ -39,8 +39,8 @@ class PostTable extends React.Component {
                           <td>Tech Gadgets</td>
                           <td>May 11 2019</td>
                           <td>
-                            <a href="details.html" class="btn btn-secondary">
-                              <i class="fas fa-angle-double-right"></i> Details
+                            <a href="/app/details" className="btn btn-secondary">
+                              <i className="fas fa-angle-double-right"></i> Details
                             </a>
                           </td>
                         </tr>
@@ -50,8 +50,8 @@ class PostTable extends React.Component {
                           <td>Web Development</td>
                           <td>May 13 2019</td>
                           <td>
-                            <a href="details.html" class="btn btn-secondary">
-                              <i class="fas fa-angle-double-right"></i> Details
+                            <a href="/app/details" className="btn btn-secondary">
+                              <i className="fas fa-angle-double-right"></i> Details
                             </a>
                           </td>
                         </tr>
@@ -61,8 +61,8 @@ class PostTable extends React.Component {
                           <td>Business</td>
                           <td>May 15 2019</td>
                           <td>
-                            <a href="details.html" class="btn btn-secondary">
-                              <i class="fas fa-angle-double-right"></i> Details
+                            <a href="/app/details" className="btn btn-secondary">
+                              <i className="fas fa-angle-double-right"></i> Details
                             </a>
                           </td>
                         </tr>
@@ -72,8 +72,8 @@ class PostTable extends React.Component {
                           <td>Web Development</td>
                           <td>May 17 2019</td>
                           <td>
-                            <a href="details.html" class="btn btn-secondary">
-                              <i class="fas fa-angle-double-right"></i> Details
+                            <a href="/app/details" className="btn btn-secondary">
+                              <i className="fas fa-angle-double-right"></i> Details
                             </a>
                           </td>
                         </tr>
@@ -83,8 +83,8 @@ class PostTable extends React.Component {
                           <td>Health & Wellness</td>
                           <td>May 20 2019</td>
                           <td>
-                            <a href="details.html" class="btn btn-secondary">
-                              <i class="fas fa-angle-double-right"></i> Details
+                            <a href="/app/details" className="btn btn-secondary">
+                              <i className="fas fa-angle-double-right"></i> Details
                             </a>
                           </td>
                         </tr>
@@ -92,34 +92,34 @@ class PostTable extends React.Component {
                     </table>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="card text-center bg-primary text-white mb-3">
-                    <div class="card-body">
+                <div className="col-md-3">
+                  <div className="card text-center bg-primary text-white mb-3">
+                    <div className="card-body">
                       <h3>Posts</h3>
-                      <h4 class="display-4">
-                        <i class="fas fa-pencil-alt"></i> 6
+                      <h4 className="display-4">
+                        <i className="fas fa-pencil-alt"></i> 6
                       </h4>
-                      <a href="posts.html" class="btn btn-outline-light btn-sm">View</a>
+                      <a href="/app/posts" className="btn btn-outline-light btn-sm">View</a>
                     </div>
                   </div>
 
-                  <div class="card text-center bg-success text-white mb-3">
-                    <div class="card-body">
+                  <div className="card text-center bg-success text-white mb-3">
+                    <div className="card-body">
                       <h3>Categories</h3>
-                      <h4 class="display-4">
-                        <i class="fas fa-folder"></i> 4
+                      <h4 className="display-4">
+                        <i className="fas fa-folder"></i> 4
                       </h4>
-                      <a href="categories.html" class="btn btn-outline-light btn-sm">View</a>
+                      <a href="/app/categories" className="btn btn-outline-light btn-sm">View</a>
                     </div>
                   </div>
 
-                  <div class="card text-center bg-warning text-white mb-3">
-                    <div class="card-body">
+                  <div className="card text-center bg-warning text-white mb-3">
+                    <div className="card-body">
                       <h3>Users</h3>
-                      <h4 class="display-4">
-                        <i class="fas fa-users"></i> 4
+                      <h4 className="display-4">
+                        <i className="fas fa-users"></i> 4
                       </h4>
-                      <a href="users.html" class="btn btn-outline-light btn-sm">View</a>
+                      <a href="/app/users" className="btn btn-outline-light btn-sm">View</a>
                     </div>
                   </div>
                 </div>

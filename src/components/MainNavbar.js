@@ -43,20 +43,20 @@ class MainNavbar extends React.Component {
                             <Nav navbar className="ml-auto">
                                 <UncontrolledDropdown>
                                     <DropdownToggle nav caret>
-                                        <i class="fas fa-user"></i> Welcome  
+                                        <i className="fas fa-user"></i> Welcome  
                                     </DropdownToggle>
                                         <DropdownMenu right>
-                                        <DropdownItem>
-                                          <i class="fas fa-user-circle"></i> Profile
+                                        <DropdownItem href="/app/profile">
+                                          <i className="fas fa-user-circle"></i> Profile
                                         </DropdownItem>
-                                        <DropdownItem>
-                                          <i class="fas fa-cog"></i> Settings
+                                        <DropdownItem href="/app/settings">
+                                          <i className="fas fa-cog"></i> Settings
                                         </DropdownItem> 
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                                 <NavItem>
-                                    <NavLink className="nav-link" activeClassName="active" to="/app/login">
-                                        <i class="fas fa-user-times"></i> Logout
+                                    <NavLink className="nav-link" activeClassName="active" to="/login">
+                                        <i className="fas fa-user-times"></i> Logout
                                     </NavLink>
                                 </NavItem>
                             </Nav>

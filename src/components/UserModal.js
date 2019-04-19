@@ -5,19 +5,19 @@ import $ from 'jquery/dist/jquery';
 class UserModal extends React.Component {
 
     componentDidMount() {
-        $("#addUserModal").draggable({
-            handle: ".modal-header"
-        });
-        $('.modal').modal({
-            backdrop: false,
-            show: false
-          });
+        // $("#addUserModal").draggable({
+        //     handle: ".modal-header"
+        // });
+        // $('.modal').modal({
+        //     backdrop: false,
+        //     show: false
+        //   });
     }
 
     render() {
         return(
             <div className="modal fade modeless" id="addUserModal">
-            <div className="modal-dialog modal-lg">
+            <div className="modal-dialog modal-lg" >
               <div className="modal-content">
                 <div className="modal-header bg-warning text-white">
                   <h5 className="modal-title">Add User</h5>
@@ -28,19 +28,19 @@ class UserModal extends React.Component {
                 <div className="modal-body">
                   <form>
                     <div className="form-group">
-                      <label for="name">Name</label>
+                      <label htmlFor="name">Name</label>
                       <input type="text" className="form-control"/>
                     </div>
                     <div className="form-group">
-                      <label for="email">Email</label>
+                      <label htmlFor="email">Email</label>
                       <input type="email" className="form-control"/>
                     </div>
                     <div className="form-group">
-                      <label for="password">Password</label>
+                      <label htmlFor="password">Password</label>
                       <input type="password" className="form-control"/>
                     </div>
                     <div className="form-group">
-                      <label for="password2">Confirm Password</label>
+                      <label htmlFor="password2">Confirm Password</label>
                       <input type="password" className="form-control"/>
                     </div>
                   </form>
