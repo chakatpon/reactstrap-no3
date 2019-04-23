@@ -1,6 +1,16 @@
 import React from 'react';
+// import * as CKEDITOR from 'ckeditor/ckeditor';
+// import $ from 'jquery/dist/jquery.min';
 
 class Details extends React.Component {
+
+    componentDidMount() {
+      // CKEDITOR.replace('#editor1');
+      // $(window).load(() => {
+      //   CKEDITOR.replace('editor1');
+      //   });
+    }
+
     render() {
         return(
             <div>
@@ -20,17 +30,17 @@ class Details extends React.Component {
                   <div className="container">
                     <div className="row">
                       <div className="col-md-3">
-                        <a href="index.html" className="btn btn-light btn-block">
+                        <a href="/" className="btn btn-light btn-block">
                           <i className="fas fa-arrow-left"></i> Back To Dashboard
                         </a>
                       </div>
                       <div className="col-md-3">
-                        <a href="index.html" className="btn btn-success btn-block">
+                        <a href="/" className="btn btn-success btn-block">
                           <i className="fas fa-check"></i> Save Changes
                         </a>
                       </div>
                       <div className="col-md-3">
-                        <a href="index.html" className="btn btn-danger btn-block">
+                        <a href="/" className="btn btn-danger btn-block">
                           <i className="fas fa-trash"></i> Delete Post
                         </a>
                       </div>

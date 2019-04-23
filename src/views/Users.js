@@ -52,8 +52,8 @@ class Users extends React.Component{
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td>John Doe</td>
-                            <td>jdoe@gmail.com</td>
+                            <td>Chakatpon Khunthong</td>
+                            <td>giraffeman180@gmail.com</td>
                             <td>
                               <a href="/app/details" className="btn btn-secondary">
                                 <i className="fas fa-angle-double-right"></i> Details
